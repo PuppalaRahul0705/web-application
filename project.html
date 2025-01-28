@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Users</h1>
+        <button id="addUserBtn" class="add-button">Add User</button>
+        <div id="userList"></div>
+
+        <div id="userForm" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-button" id="cancelForm">&times;</span>
+                <h2>User Details</h2>
+                <form id="userFormElement">
+                    <input type="hidden" id="userId">
+                    <input type="text" id="firstName" placeholder="First Name" required><br>
+                    <input type="text" id="lastName" placeholder="Last Name" required><br>
+                    <input type="email" id="email" placeholder="Email" required><br>
+                    <input type="text" id="department" placeholder="Department"><br>
+                    <button type="submit" class="save-button">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
